@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Spotify Clone</string>
+
+    <string name="header_1">Today\'s biggest hits</string>
+    <string name="title_1">Today\'s Top Hits</string>
+    <string name="content_1">Bad Bunny on top of the\nHottest 50!</string>
+    <string name="title_2">RapCaviar</string>
+    <string name="content_2">New music from Kodak Black, Key Glock and...</string>
+    <string name="title_3">All Out 2010s</string>
+    <string name="content_3">The biggest songs of the 2010s</string>
+    <string name="title_4">Rock Classics</string>
+    <string name="content_4">Rock legends and epic songs that continue to inspire...</string>
+    <string name="title_5">Chill Hits</string>
+    <string name="content_5">Kick back to the best new and recent chill hits.</string>
+
+    <string name="header_2">Trending now</string>
+    <string name="title_6">Songs Of My Time</string>
+    <string name="content_6">Best hits 2010-2015.</string>
+    <string name="title_7">internet rewind</string>
+    <string name="content_7">Viral classics. Yup, we\'re\nat that stage.</string>
+    <string name="title_8">Broken Heart</string>
+    <string name="content_8">Nurse your emotional wounds.</string>
+    <string name="title_9">Best of the Deca...</string>
+    <string name="content_9">A few of the many great songs from the...</string>
+    <string name="title_10">Villain Mode</string>
+    <string name="content_10">Entering my reputation era...</string>
+
+    <string name="header_3">Throwback</string>
+    <string name="title_11">Top Hits 2017</string>
+    <string name="content_11">Rewind and rediscover\nbig songs of 2017...</string>
+    <string name="title_12">All Out 2010s</string>
+    <string name="content_12">The biggest songs of the 2010s.</string>
+    <string name="title_13">Best of 2000s</string>
+    <string name="content_13">Your favorite 2000s songs.</string>
+    <string name="title_14">Songs Of My Time</string>
+    <string name="content_14">Best hits 2010-2015.</string>
+    <string name="title_15">00s Rock Anthems</string>
+    <string name="content_15">Thee songs rocked the 00s.</string>
+
+    <string name="header_4">Mood</string>
+    <string name="title_16">Happy Songs</string>
+    <string name="content_16">Fell good songs that\nmakes you happy</string>
+    <string name="title_17">Songs to Sing in...</string>
+    <string name="content_17">Splash and sing-along</string>
+    <string name="title_18">Good Times</string>
+    <string name="content_18">The happiest hits to boost your day.</string>
+    <string name="title_19">Positive Vibes</string>
+    <string name="content_19">Turn that frown upside down with these...</string>
+    <string name="title_20">Classic Road Trip</string>
+    <string name="content_20">A soundtrack to fuel your good mood whi...</string>
+
+    <string-array name="songs">
+        <item>MONACO</item>
+        <item>greedy</item>
+        <item>Paint The Town Red</item>
+        <item>Strangers</item>
+        <item>3D (feat.Jact Harlow)</item>
+        <item>IDGAF (feat. Yeat)</item>
+        <item>SAY MY GRACE (feat. Travis Scott)</item>
+        <item>fukumean</item>
+        <item>I KNOW ?</item>
+        <item>First Person Shooter (feat. J. Cole)</item>
+        <item>Starboy</item>
+        <item>SweaterWeather</item>
+        <item>See You Again (feat. Kali Uchis)</item>
+        <item>Another Love</item>
+        <item>Locked out of Heaven</item>
+        <item>I Wanna Be Sedated</item>
+        <item>Highway to Hell</item>
+        <item>Paint It, Black</item>
+        <item>Everlong</item>
+        <item>Free Bird</item>
+        <item>What Was I Made For</item>
+        <item>Daylight</item>
+        <item>I Wanna Be Yours</item>
+        <item>I Remember Everything</item>
+        <item>august</item>
+    </string-array>
+
+    <string-array name="artists">
+        <item>Bad Bunny</item>
+        <item>Tate McRae</item>
+        <item>Doja Cat</item>
+        <item>Kenya Grace</item>
+        <item>Jung Kook, Jack Harlow</item>
+        <item>Drake, Yeat</item>
+        <item>Offset, Travis Scott</item>
+        <item>Gunna</item>
+        <item>Travis Scott</item>
+        <item>Drake, J. Cole</item>
+        <item>The Weekend, Draft Punk</item>
+        <item>The Neighbourhood</item>
+        <item>Tyler, The Creator, Kali Uchis</item>
+        <item>Tome Odell</item>
+        <item>Bruno Mars</item>
+        <item>Ramones</item>
+        <item>AC/DC</item>
+        <item>The Rolling Stones</item>
+        <item>Foo Fighters</item>
+        <item>Lynyrd Skynyrd</item>
+        <item>Billie Elish</item>
+        <item>David Kushner</item>
+        <item>Arctic Monkeys</item>
+        <item>Zach Bryan, Kacey Musgraves</item>
+        <item>Taylor Swift</item>
+    </string-array>
+</resources>

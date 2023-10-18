@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:paddingTop="14dp"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/bg_elipse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="L" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_elipse"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="Music" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_above="@id/menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/header_1"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/album1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_1"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_1"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_2"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_2"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img3" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_3"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_3"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img4" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_4"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_4"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img5" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_5"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_5"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/header_2"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/album6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img6" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_6"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_6"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img7" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_7"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_7"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img8" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_8"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_8"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img9" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_9"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_9"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img10" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_10"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_10"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/header_3"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/album11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img11" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_11"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_11"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img12" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_12"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_12"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img13" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_13"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_13"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img14" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_14"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_14"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img15" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_15"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_15"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/header_4"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/album16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img16" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_16"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_16"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img17" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_17"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_17"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img18" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_18"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_18"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img19" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_19"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_19"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/album20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/img20" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="6dp"
+                            android:text="@string/title_20"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/content_20"
+                            android:textColor="@color/light"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:text="Home" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light"
+                android:textSize="10sp"
+                android:text="Search" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_collection" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light"
+                android:textSize="10sp"
+                android:text="Library" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_spotify" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light"
+                android:textSize="10sp"
+                android:text="Premium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

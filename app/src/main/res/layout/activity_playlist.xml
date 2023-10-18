@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaylistActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/bg_playlist">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_arrow" />
+
+            <ImageView
+                android:id="@+id/img_album_cover"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img3" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/txt_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light"
+            android:textSize="12sp"
+            android:text="34,256,803 likes" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ViewSwitcher
+                android:id="@+id/btn_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="20dp"
+                android:focusable="true"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_like" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_liked" />
+
+            </ViewSwitcher>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/btn_like"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_triple_dots" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:background="@drawable/bg_elipse"
+                android:src="@drawable/ic_play" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@id/dots1"
+                android:layout_toEndOf="@id/img1"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:id="@+id/txt_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Judul Lagu"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_artist1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist"
+                    android:textColor="@color/light"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/dots1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_triple_dots" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@id/dots2"
+                android:layout_toEndOf="@id/img2"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:id="@+id/txt_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Judul Lagu"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_artist2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist"
+                    android:textColor="@color/light"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/dots2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_triple_dots" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@id/dots3"
+                android:layout_toEndOf="@id/img3"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:id="@+id/txt_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Judul Lagu"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_artist3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist"
+                    android:textColor="@color/light"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/dots3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_triple_dots" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@id/dots4"
+                android:layout_toEndOf="@id/img4"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:id="@+id/txt_title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Judul Lagu"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_artist4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist"
+                    android:textColor="@color/light"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/dots4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_triple_dots" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@id/dots5"
+                android:layout_toEndOf="@id/img5"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:id="@+id/txt_title5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Judul Lagu"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_artist5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist"
+                    android:textColor="@color/light"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/dots5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_triple_dots" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/last_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@id/dots6"
+                android:layout_toEndOf="@id/img6"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:id="@+id/txt_title6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Judul Lagu"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_artist6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist"
+                    android:textColor="@color/light"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/dots6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_triple_dots" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
