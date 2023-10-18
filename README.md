@@ -3,11 +3,16 @@ This project is a clone of Spotify home page and album page interface. Made usin
 
 
 ## How to Run The Code
+Run in Android Studio
 1. Open Android Studio
 2. Click New > Project from version control
 3. Paste the URL of this repository
 4. Click Clone
 5. Press 'Run app' button
+
+Run instalation
+1. Download app-debug.apk from this reposirory
+2. Install the app on your phone
 
 ## Screen Capture
 - Home Page
